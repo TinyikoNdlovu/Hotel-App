@@ -1,0 +1,61 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    position: relative;
+}
+
+.header-logo {
+    width: 100px;
+    height: 95px;
+    margin-left: 120px;
+}
+
+.header-center {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    max-width: fit-content;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    color: black;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    margin-right: 80px;
+}
+
+.header-button {
+    background-color: lightgry !important;
+    margin-right: 10px !important;
+    width: 202px !important;
+    height: 45px !important;
+    background: #fff !important;
+    font-family: "Lexeng";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: none !important;
+}
+
+.center-button {
+    padding: 10px;
+    border: none;
+    font-family: "Lexend";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+}
