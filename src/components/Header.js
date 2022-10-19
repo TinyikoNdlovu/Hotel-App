@@ -1,14 +1,14 @@
 import React from "react";
 
 import "./Header.css";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/royale-hotels-low-resolution-logo-color-on-transparent-background.png";
 import { Button } from '@mui/material';
 
 function Header() {
 
     return(
-        <div className="header">
-            <img className="header-logo"alt="" src={Logo} />
+        <div className="header" style={{marginTop: 15}}>
+            <img className="header-logo" style={{width: 120}} alt="" src={Logo} />
             <div className="header-center">
                 <div className="center-button">Home</div>
                 <div className="center-button">Rooms & Suits</div>
