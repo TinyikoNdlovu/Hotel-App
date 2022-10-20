@@ -4,6 +4,7 @@ import "./Home.css";
 import Banner from "./Banner";
 import Categories from "./Categories";
 import Card from "./Card";
+import Advantages from "./Advantages";
 
 let  p1 = require("../assets/intercontinental-hotel.jpg");
 let  p2 = require("../assets/south-beach-camps-bay.jpg");
@@ -58,6 +59,42 @@ function Home() {
             <div>
                 <h1 className="quotes-card">Royale Hotels stand a true paragon of world class hospitality and have some of the best luxury hotels and resorts in South Africa and also provides everything you need for a luxury accomodation. Great savings, good availability, best deals and great rates!</h1>
             </div>
+            <div style={{display: 'flex', alignItems: 'flex-end', justifyContent: "center",
+                flexDirection: "column", marginTop: "60px", marginBottom: "120px", height: "15vh" }}>
+                    <div style={{background: "#58CCED", height: "170px", width: '50%', zIndex: '-1', position: 'absolute'}}></div>
+                    <div style={{display: "flex", alignItems: 'center', flexDirection: "column", justifyContent: 'center', 
+                    backgroung: 'transparent', zIndex: '1', marginRight: '480px' }}>
+                        <h1 style={{color: '#0044FF', marginBottom: "0px"}} className="quote-h1">
+                            Luxury Redefined.</h1>
+                        <h4 style={{display: 'flex', alignItems: 'center', justifyContent: 'center', 
+                        color: 'gray',marginTop: "0px"}} className="quote-h4">Luxury is Personal!</h4>
+                    </div>
+                </div>
+
+                <div className="some-quotes">
+                    <h4> At Royale Hotels We provide travellers with an efficient and reliable online guide to assist with hotel, 
+                        transport and activity bookings all the way from Johannesburg, Durban and Cape Town in South Africa to 
+                        exotic destinations such as Tanzania, Kenya, Mozambique and Madagascar. We offer a wide variety of carefully
+                         selected accommodation options to ensure that unique travel requirements are met for business trips, romantic
+                          getaways, successful conferences, memorable family holidays, golf and beach vacations as well as luxurious 
+                          train journeys. Through our years of experience we can tailor-make travel arrangements to suit every budget 
+                          ranging from rustic country lodges in the Drakensberg and budget city hotels in Johannesburg to the most 
+                          exclusive luxury beach retreat in Durban. Royale Hotels offer a safe and secure environment, authentic 
+                          hospitality, thoughtful service, lavish accomodation and world class facilities.</h4>
+                </div>
+
+                <Advantages />
+                <div style={{display: '', alignItems: 'center', justifyContent: "center",
+                flexDirection: "column", marginTop: "60px", marginBottom: "120px", height: "15vh" }}>
+                    <div style={{background: "#58CCED", height: "170px", width: '50%', zIndex: '-1', position: 'absolute'}}></div>
+                    <div style={{display: "flex", alignItems: 'center', flexDirection: "column", justifyContent: 'center', 
+                    backgroung: 'transparent', zIndex: '1', marginRight: '480px' }}>
+                        <h1 style={{color: '#0044FF', marginBottom: "0px"}} className="quote-h1">
+                            They Loved Our Hospitality.</h1>
+                        <h4 style={{display: 'flex', alignItems: 'center', justifyContent: 'center', 
+                        color: 'gray',marginTop: "0px"}} className="quote-h4">Explore the world with Ease!</h4>
+                    </div>
+                </div>
         </div>
     )
 }
