@@ -1,10 +1,10 @@
 import React from "react";
 
-let one = require("");
-let two = require("");
-let three = require("");
-let four = require("");
-let five = require("");
+let one = require("../assets/one.png");
+let two = require("../assets/two.png");
+let three = require("../assets/three.png");
+let four = require("../assets/four.png");
+let five = require("../assets/five.png");
 
 const items = [
     {
@@ -32,13 +32,13 @@ const items = [
 function Categories() {
 
     return(
-        <div style={{display: 'flex', justifyContent: 'center',marginTop:"5px",
-        padding: '15px', backgroundColor: '#fff', marginBottom: "100px" }}>
+        <div style={{display: 'flex', justifyContent: 'center', marginTop:"5px",
+        padding: '15px', backgroundColor: '#fff', marginBottom: "10px" }}>
             {items.map((item, index) => (
                 <div key={index} style={{alignItems: 'center', marginRight: '150px' }}>
                     <img src={items[index].image} alt="" style={{width: '50px', height: '50px', 
                     resizeMode: "contain"}} />
-                    <h5 style={{fontFamily: "Lexend",fontSize: '16px', fontWeight: '400', 
+                    <h5 style={{fontFamily: "Lexend", fontSize: '16px', fontWeight: '400', 
                     lineHeight: '20px', letterSpacing: '0.05em', textAlign:'center'}}>{items[index].text}</h5>
                 </div>
             ))}

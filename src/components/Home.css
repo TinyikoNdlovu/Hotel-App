@@ -23,3 +23,17 @@
     text-align: center;
     color: rgba(0, 0, 0, 1s);
 }
+
+.quotes-card {
+    font-family: Lexend !important;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 75px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(32,110,167,1);
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 90px;
+}
+
