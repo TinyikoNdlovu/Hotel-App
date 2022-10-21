@@ -45,7 +45,7 @@ function Advantages() {
             <div className="advantages-info">
                 <div className="advantages-header">
                     <h1>Advantages of Staying with Us</h1>
-                    <h4>Sapien gravida dolor comodo.</h4>
+                    <h4>Travel, Explore places! have Fun and Enjoy.</h4>
                 </div>
                 <div style={{justifyContent: 'center', marginTop: 5, marginLeft: '5%'}}>
                     {items.map((item, index) => (

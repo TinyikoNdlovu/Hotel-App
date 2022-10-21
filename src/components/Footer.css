@@ -1,5 +1,6 @@
 .footer {
-    background-color: blue;
+    padding: 20px;
+    background-color: #1261A0;
     bottom: 0;
     text-align: center;
     color: white;
@@ -18,7 +19,10 @@
 
 .logo-header-footer {
   width: 200px;
-  font-family: Lexend;
+}
+
+/* .logo-header-footer {
+    font-family: Lexend;
   font-size: 36px;
   font-weight: 700;
   line-height: 45px;
@@ -29,25 +33,29 @@
   border-radius: 0;
   width: 100px;
   height: 95px;
-}
+} */
 
-.footer-bottom {
+.footer-top {
     padding: 20px;
-    border-color: blue;
-    align-items: center;
-    justify-content: center;
-    color: white;
+    border-color: #1261A0;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
 }
 
-.footer-bottom > p {
+.footer-top > p {
     font-family: Lexend;
     font-size: 12px;
     font-weight: 300;
     line-height: 15px;
     letter-spacing: 0em;
+    text-align: center;
+    height: 15px;
+    width: 201px;
     border-radius: 0;
-    align-items: center;
     color: rgba(255, 255, 255, 1);
+    background-color: #1261A0;
 }
 
 .address-footer {
@@ -60,6 +68,6 @@
     height: 84px;
     width: 354px;
     border-radius: 0;
-    color: rgba(255, 255, 255, 1)
+    color: rgba(255, 255, 255, 1);
 }
 
