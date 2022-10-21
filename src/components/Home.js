@@ -5,6 +5,7 @@ import Banner from "./Banner";
 import Categories from "./Categories";
 import Card from "./Card";
 import Advantages from "./Advantages";
+import Footer from "./Footer";
 
 let  p1 = require("../assets/intercontinental-hotel.jpg");
 let  p2 = require("../assets/south-beach-camps-bay.jpg");
@@ -14,7 +15,7 @@ let  p4 = require("../assets/pod-camps-bay-boutique.jpg");
 function Home() {
 
     return(
-        <div className="home">
+        <div className="home" style={{height: '100vh'}}>
             <Banner />
             <div className="home-categories">
                 <div style={{display: 'flex', alignItems: 'flex-end', justifyContent: "center",
@@ -95,6 +96,8 @@ function Home() {
                         color: 'gray',marginTop: "0px"}} className="quote-h4">Explore the world with Ease!</h4>
                     </div>
                 </div>
+
+                <Footer />
         </div>
     )
 }

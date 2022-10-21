@@ -8,7 +8,7 @@ function Header() {
 
     return(
         <div className="header" style={{marginTop: 15}}>
-            <img className="header-logo" style={{width: 120}} alt="" src={Logo} />
+            <img className="header-logo" alt="" src={Logo} />
             <div className="header-center">
                 <div className="center-button">Home</div>
                 <div className="center-button">Rooms & Suits</div>

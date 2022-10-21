@@ -2,11 +2,11 @@ import { FoodBankSharp } from "@mui/icons-material";
 import React from "react";
 import "./Advantages.css";
 
-let six = require("../assets/");
-let seven = require("../assets/");
-let eight = require("../assets/");
-let nine = require("../assets/");
-let ten = require("../assets/");
+let six = require("../assets/breakfast.png");
+let seven = require("../assets/wifi.png");
+let eight = require("../assets/car.png");
+let nine = require("../assets/airplane-ticket.png");
+let ten = require("../assets/car-parking.png");
 
 const items = [
     {
@@ -47,17 +47,19 @@ function Advantages() {
                     <h1>Advantages of Staying with Us</h1>
                     <h4>Sapien gravida dolor comodo.</h4>
                 </div>
-                <div style={{justifyContent: 'center', marginTop: 5}}>
+                <div style={{justifyContent: 'center', marginTop: 5, marginLeft: '5%'}}>
                     {items.map((item, index) => (
                         <div key={index} style={{alignItems: 'center', 
                          marginRight: 30, display: 'flex', marginLeft: '143px'}}>
-                            <img src={items[index].image} className='advantages-img' alt='' />
+                            <img src={items[index].image} className='advantages-img' alt='' style={{backgroundColor: '#fff'}} />
+                            <div>
                             <h5 className="advantages-h5">
                                 {items[index].text}
                             </h5>
                             <h5 className="advantages-h">
                                 {items[index].subtext}
                             </h5>
+                            </div>
                         </div>
                     ))}
                 </div>
