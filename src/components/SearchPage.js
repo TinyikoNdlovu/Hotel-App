@@ -3,6 +3,7 @@ import React, { useState } from "react";
 
 import "./SearchPage.css";
 import SearchResult from "./SearchResult";
+import {firebase} from "../firebaseConfig";
 
 let room1 = require("../assets/hotelroom.jpg");
 let room2 = require("../assets/terrace-pool-plus-suite.jpg"); 
@@ -39,13 +40,13 @@ const rooms = [
 
 function SearchPage() {
 
-    const [userData, setUserData] = useState([]);
+    const email = firebase.auth().currentUser?.email;
 
     return(
         <div className="searchpage">
             <div className="searchpage-data">
-                <Button variend="outline">User Name</Button>
-                <Button variend="outline">User Email</Button>
+                {/* <Button variend="outline">User Name</Button> */}
+                <Button variend="outline" style={{marginLeft: '10px'}}>{email}</Button>
             </div>
             {rooms.map((data, index) => (
                 <SearchResult key={index}

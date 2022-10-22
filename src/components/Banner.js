@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Banner.css";
 import { Button } from '@mui/material';
 import { format } from "date-fns";
 import { DateRange } from "react-date-range";
+import { useNavigate } from "react-router-dom";
+import {firebase} from "../firebaseConfig";
 
 let vector = require("../assets/vector.png");
 let adult = require("../assets/adult.png");
@@ -11,6 +13,10 @@ let arrowdown = require("../assets/sort-down-arrow.png");
 let arrowup = require("../assets/sort-up-arrow.png");
 
 function Banner() {
+
+    const email = firebase.auth().currentUser?.email;
+
+    const navigate = useNavigate();
 
     const [date, setDate] = useState([
         {
@@ -36,21 +42,33 @@ function Banner() {
         })
     }
 
+    const handle = () => {
+        if (!email) {
+            alert("You have to Login to Explore and Check")
+        } else {
+            navigate("/search");
+        }
+         
+    }
+
     return(
     <>
         <div className="banner">
             <div className="banner-search">
-                <DateRange editableDateInputs ={true}
-                onChange ={(item) => setDate([item.selection])}
-                moveRangeOnFirstSelection ={false}
-                ranges ={date}
-                className='date'
-                minDate={new Date()} />
+                {
+                    showSearch &&
+                    <DateRange editableDateInputs ={true}
+                    onChange ={(item) => setDate([item.selection])}
+                    moveRangeOnFirstSelection ={false}
+                    ranges ={date}
+                    className='date'
+                    minDate={new Date()} />
+                }
             </div>
             <div className="banner-info">
                 <h4>Enjoy your vacation with Royale Hotels</h4>
                 <h1 style={{marginTop: '0px', color: "#58CCED"}}>Let us plan you a perfect International Holiday</h1>
-                <Button style={{backgroundColor: "#58CCED"}}>Explore Now</Button>
+                <Button onClick={handle} style={{backgroundColor: "#58CCED"}}>Explore Now</Button>
             </div>
         </div>
         <div className="booking-div">
@@ -127,7 +145,7 @@ function Banner() {
                     <div className="banner-main-div" style={{paddingTop: "0px"}}>
                         <h4 className="fadded-text">Hope you have an Amazing Experience ...</h4>
                         <div className="booking-button">
-                            <button>Check Availability</button>
+                            <button onClick={handle}>Check Availability</button>
                         </div>
                     </div>
                     

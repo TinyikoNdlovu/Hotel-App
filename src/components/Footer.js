@@ -1,5 +1,6 @@
 import React from "react";
-import Logo from "../assets/royale-hotels-low-resolution-logo-color-on-transparent-background.png"
+import Logo from "../assets/royale-hotels-low-resolution-logo-color-on-transparent-background.png";
+import { Link } from "react-router-dom";
 
 import "./Footer.css";
 
@@ -19,7 +20,10 @@ function Footer() {
         <div className="footer-top">
             <div className="footer">
                 <div className="footer-left">
+                <Link to="/" style={{textDecoration: 'none'}}>
                     <img className="logo-header-footer" src={Logo} alt="" />
+                </Link>
+                    
                     <div style={{display: 'flex', alignItems: 'center', 
                     justifyContent: 'space-between', width: '300px'}}>
                         <img src={facebook} alt="" />
